@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>start project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./imgs/background and logo/logo.PNG" alt="logo" />
+        <h1>DO IT BETTER</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./calculator.html" class="active">Calculator</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="head-title">
+        <h2>ხარჯების კალკულატორი</h2>
+      </div>
+      <section class="calculator">
+        <div id="calculator-wrapper">
+          <form action="form">
+            <input
+              type="number"
+              id="width"
+              placeholder="შეიყვანეთ ოთახის სიგრძე"
+              class="count"
+            />
+            <input
+              type="number"
+              id="length"
+              placeholder="შეიყვანეთ ოთახის სიგანე"
+              class="count"
+            />
+            <input
+              type="number"
+              id="hight"
+              placeholder="შეიყვანეთ ოთახის სიმაღლე"
+              class="count"
+            />
+            <input
+              type="number"
+              id="number-of-switch"
+              placeholder="შეიყვანეთ ოთახში ჩამრთველების რაოდენობა"
+              class="count"
+            />
+            <input
+              type="number"
+              id="number-of-plug"
+              placeholder="შეიყვანეთ ოთახში დენცქვიტების რაოდენობა"
+              class="count"
+            />
+            <button id="submit" onclick="send()">გაგზავნა</button>
+          </form>
+          <!-- <input type="answer" id="answer" /> -->
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
